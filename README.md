@@ -12,7 +12,8 @@
     Tecnologías utilizadas.
     Descripción del proyecto.
     Adaptabilidad.
-    Personas Desarrolladoras del Proyecto.
+    Desarrollador del Proyecto.
+    Fuentes de información consultadas.
     
 *<p2><strong>Introducción</strong></p2>*
 
@@ -43,7 +44,7 @@
     -Se desarrollo en CSS un termino llamado responsividad, que permite 
     que el sitio web se adapte a distintos tamaños de página.
 
-<p5><strong>Desarollador </strong></p5>
+<p5><strong>Desarollador del Proyecto</strong></p5>
 
       Ivonne. 
     
