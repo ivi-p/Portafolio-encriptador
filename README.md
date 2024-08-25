@@ -45,12 +45,12 @@
 
 <p5><strong>Desarollador </strong></p5>
 
-      *Ivonne.* 
+      Ivonne. 
     
   
 <p6><strong>Fuentes de información consultadas </strong></p6> 
 
-    *-luri.*
-    *-Información obtenida de curso Formación principiantes en programación G7.*
-    *-Sitios web.*
+    -luri.
+    -Información obtenida de curso Formación principiantes en programación G7.*
+    -Sitios web.
 
