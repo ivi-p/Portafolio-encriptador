@@ -18,7 +18,7 @@
 *<p2><strong>Introducción</strong></p2>*
 
     -Este proyecto fue creado para el challenge solicitado por alura latam + oracle.
-    -Mi proyecto se basa en desarrollar un encriptador de texto amigable con el usario y visualmente acogedor.
+    -Mi proyecto se basa en desarrollar un encriptador de texto amigable con el usuario y visualmente acogedor.
 
 
     
