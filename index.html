@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Encriptador online</title>
+    <!-- imagen de favicon/icono del sitio-->
+    <link rel ="icon" type="image/x-icon" href="./img/favicon.int2.png">
+
+    <!-- Etiqueta para conectar css con html, no me funciono colocar styles.css como nombre, si o si colocar stylesheet para que lo tome el navegador-->
+    <link rel= "stylesheet" href="style.css">
+    
+    <!--importante poner class para facilitar modificaciones en CSS-->
+</head>
+<body>
+      <!--Encabezado de la página-->
+    <header>
+        <h1 class="texto_entrada">Bienvenido al encriptador de textos 
+        </h1>  <!--Titulo, totalmente modificable-->
+    </header>
+    <main>
+        <!--En esta seccion se aprecia la estructura inicial del encriptador, acá incluye el cuadro de texto donde ingresamos el texto para encriptar, además los botones -->
+        <section class="segmento_principal">
+            
+            
+            <textarea class="cuadro_detexto" name="cuadro_de_texto" id="cuadro_de_texto_1" placeholder="Áca puedes insertar tu texto"></textarea>
+
+            <div class="mensaje_restriccion">
+                <img src="./img/advertencia.png" alt="mano_de_advertencia1"  class="mano_de_advertencia">
+                <p class="texto_advertencia">
+                    Recuerda 
+                    <strong class="parte_destaca">SOLO</strong> 
+                    letras minúsculas, sin tilde y/o caracteres especiales. 
+                </p>
+            </div>
+            <div class="cuadros_encriptar_desencriptar">
+                <button type="submit" class="boton_encriptar">Encriptar</button>
+                <button type="submit" class="boton_Desencriptar">Desencriptar</button>
+
+            </div>
+            <!--En esta seccion se aprecia la estructura secuandaria del encriptador, acá incluye el cuadro de texto donde obtenemos el texto  encriptado, además de la imagen 
+            y el botón de copiar -->
+         </section>
+
+        <section class="segmento__secundario">
+            <div class="cuadro_de_resultado">
+                <img src="./img/preview.png" alt="imagen_de_resultado" class="imagen_de_resultado"> <!-- totalmente modificable-->
+                <p class="texto_solictud">Su solicitud aparecerá aquí </p>
+                
+                
+            </div>
+            <textarea class="texto_resultado" type="mensaje_resultado" id="texto_resultado" readonly></textarea>
+            <button type="submit" class="boton_copiar_resultado">Copiar resultado</button>
+        </section>
+
+
+    </main>
+
+    <!-- Final de página, se pude colocar imagenes o logos, pero me gusto sin-->
+    <footer>
+        <div class="cuadro_partebaja">
+            <p class= "mensaje_partebaja"> Encriptador de texto - Creado por Ivonne Clavijo para curso de Alura latam + oracle - Grupo 7 </p>
+        
+           
+
+        </div>
+    </footer>
+<!-- Etiqueta de js-->
+<script src="./apps.js"></script>
+
+</body>
+</html>

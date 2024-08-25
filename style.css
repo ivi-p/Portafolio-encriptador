@@ -1,0 +1,469 @@
+/*-- fuentes--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+/*- cuidado con los {} -*/
+
+/*- Etiqueta para las variables de colores -*/
+
+:root{
+
+
+--Light-blue: #306388;
+--Black: #000000;
+--Fondo: #C7D6DD15;
+--Gray:#D9D9D9;
+--RGBA2:rgba(0, 0, 0, 0.945);
+--azul: #1082df;
+
+--white:#FFFFFF;
+--dark-blue:#0A3871;
+--RGBA:rgba(0, 0, 0, 0.24);
+--white-blue:#D8DFE8;
+--medium-blue: #0a38718a;
+--grey: #343A40;
+--gree:#495057;
+
+
+}
+
+/*- propiedades generales -*/
+
+*{
+margin:0;
+padding: 0%;
+box-sizing: border-box;
+font-family: "inter", sans-serif;
+text-decoration: none;
+background: var(--Fondo);
+}
+
+
+/*---color que sale cuando selecciono información--*/
+
+::selection {
+  background: var(--white-blue);
+  color: var(--RGBA);
+}
+
+body {
+  height:100%; /*---tamaño--*/
+}
+
+img {
+  max-width: 100%; /*---tamaño--*/
+}
+
+/*--encabezado --*/
+
+header {
+  position: absolute;
+  margin: 20px 0px 0px 40px;
+  background-color:transparent ; /*define el color de fondo del header*/
+  
+}
+
+
+header.texto_entrada {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.texto_entrada {
+ color: var(--Light-blue); 
+ background-color:transparent; /*define el color de fondo*/
+ font-size: 64px;
+ font-family: "K2D", sans-serif; /*---fuente --*/
+ font-weight: 400;
+ font-style: normal;
+ margin: 20px 0px 0px 0px;
+ text-align: center;
+ 
+}
+
+
+/* -----parte principal----- */
+
+main {
+
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.segmento_principal{
+
+width: 53%; /*cercania del otro*/
+margin: 168px 0px 0px 140px;
+background: transparent;
+}
+
+.cuadro_detexto {
+  width: 668px;
+  height: 300px;
+  background: var(--white);
+  font-weight: 100px;
+  font-size: 20px; 
+  line-height:55px;
+  padding-left: 15px;
+  outline:none;
+  border: 0.5px solid var(--white);  /*cambia el color del borde, lo deje en blanco, pero también se usa mucho negro */
+  border-radius: 28px;
+  resize:none;
+}
+
+/*cambia color el texto interno */
+.cuadro_detexto::placeholder,:focus{
+  color:var(--Black);
+  opacity: 0.8;
+  font-family: "k2D", sans-serif;
+}
+
+
+.mensaje_restriccion {
+  display: flex ;
+  flex-direction: row; 
+  align-items: flex-start; 
+  padding:0%;
+  gap: 2px; /* espaciado*/
+  position: absolute; 
+  top: 485px; 
+}
+
+/*cambia el tamaño de la imagen */
+.mano_de_advertencia {
+  width: 25px;  
+}
+
+
+/*podemos cambiar la letra y color del aviso donde esta la manito*/
+.texto_advertencia {
+
+  width: 100%;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color:var(--Black);
+
+}
+
+/*---seccion de botones de encriptar/desencriptar---*/
+
+.cuadros_encriptar_desencriptar{
+display: flex;
+flex-direction: row;
+align-items:flex-start ;
+gap: 8px;
+position:absolute;
+top: 526px;
+
+}
+
+.boton_encriptar {
+width: 328px;
+height: 67px;
+padding: 24px;
+font-family: "Jura", sans-serif;
+font-style:normal ;
+font-weight: 450;
+font-size: 32px;
+line-height:  19px;
+text-align: center;
+color: var(--Black);
+background: var(--Gray);
+border: 1px  solid var(--Gray);
+border-radius: 24px;
+cursor: pointer;
+box-shadow: 0px 20px 29px -5px var(--RGBA);
+}
+
+.boton_encriptar:active {
+  box-shadow: inset 2px 2px 4px var(--dark-blue),
+  inset -3px -4px 8px var(--dark-blue);
+  color: var(--white-blue);
+
+}
+
+.boton_encriptar:focus {
+ font-family: "K2D", sans-serif;
+ font-weight: 400;
+ font-style: italic;
+ 
+
+}
+
+
+.boton_Desencriptar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  font-family: "Jura", sans-serif;
+  font-style:normal ;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--Black);
+  background: var(--Gray);
+  border: 1px  solid var(--Gray);
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0px 20px 29px -5px var(--RGBA);
+  }
+  
+  .boton_Desencriptar:active {
+    box-shadow: inset 2px 2px 4px var(--dark-blue),
+    inset -3px -4px 8px var(--dark-blue);
+    color: var(--medium-blue);
+  }
+
+  .boton_desencriptar:focus {
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+  /*segunda parte*/
+
+  .segmento__secundario {
+
+    width: 493px;
+    height: 516px;
+    background: var(--white);
+    position: relative;
+    margin-top: 167px;
+    border-radius: 32px;
+    text-align: center;
+  }
+
+
+  /* esto esta detras de la imagen */
+
+  .cuadro_de_resultado {
+
+    width: 350px;
+    margin: auto;
+    margin-top: 5% ;
+    background: var(--white);
+    
+  }
+
+  .imagen_de_resultado {
+
+    background: var(--white);
+
+  }
+
+  /* esto esta debajo  de la imagen */
+  
+  .texto_solictud {
+    font-family:"Jura", sans-serif;
+    font-style: normal;
+    margin: 0px 60px 20px 80px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--grey);
+    opacity: 0.9;
+    background: var(--white);
+
+  }
+  /* texto encriptado/desencriptado */
+  
+.texto_resultado {
+  width: 100%;
+  height: 485;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--gree);
+  background: transparent;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  border:none;
+  resize:none;
+
+}
+
+.texto_resultado:focus{
+  outline: none;
+}
+
+/* boton copiar el texto encriptado */
+
+.boton_copiar_resultado {
+  width: 200px;
+  height: 50px; /**/
+  margin: 23px; /*orientación*/
+  position: absolute;
+  bottom:0;
+  left: 0;
+  visibility: hidden;
+  background: var(--Gray);
+  border:1px solid var(--Gray);
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 20px 29px -5px var(--RGBA);
+}
+
+.boton_copiar_resultado{
+
+  font-family: "Jura", sans-serif;
+  font-style:normal ;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+.boton_copiar_resultado:hover {
+    transform:rotate(1deg);
+    color: var(--Black);
+    font-family: "K2D", sans-serif;
+    font-style: italic;
+    font-weight: 450;
+    font-size: 18px;
+   
+    
+  }
+
+/* footer*/
+.cuadro_partebaja{
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid var(--Gray);
+  color: var(--grey);
+  text-align: center;
+  line-height: 15px;
+  font-family: "inter", sans-serif ;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color:var(--Black);
+  background: var(--white);
+}
+
+  /*sección responsivo...*/
+
+  @media(max-width:1250px) {
+    main {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .texto_entrada {
+      
+      width: 100%;
+      font-weight: 500px;
+      font-size: 40px;
+      line-height: 30px;
+    
+      
+    }
+    
+    .segmento_principal {
+
+      margin: 168px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .cuadros_encriptar_desencriptar {
+      display: flex;
+      align-items: center;
+      position:inherit;
+      
+
+    }
+    .mensaje_restriccion {
+      position:inherit;
+      margin: 15px;
+    }
+    .segmento__secundario {
+      width: 665;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+    }
+
+    .cuadro_de_resultado {
+
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      bottom: 20%;
+      font-size: 24px;
+      font-weight: 700;
+
+    }
+    .imagen_de_resultado {
+      display: none;
+    }
+    .boton_copiar_resultado {
+      position:inherit;
+      width: 100%;
+
+    }
+    .texto_resultado {
+      width: 100%;
+      height: 210px;
+      padding: 10px;
+    }
+  }
+
+  @media(max-width:720px) {
+    header.texto_entrada {
+
+      width: 100%;
+      background-color:transparent;
+      padding: 2px;
+
+    }
+    
+
+    .cuadro_detexto {
+
+      width: 90%;
+      font-size:20px;
+    }
+
+    .cuadros_encriptar_desencriptar {
+    display: grid;
+    gap:21px;
+
+    }
+
+    .segmento__secundario {
+      width: 90%;
+
+
+    .cuadro_partebaja{
+      font-size: 20px;
+
+
+    }
+
+    }
+  }
+
+
+  
